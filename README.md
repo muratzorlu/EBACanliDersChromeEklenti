@@ -1,2 +1,9 @@
 # EBACanliDersChromeEklenti
 EBA canlı ders için Linux ve Mac desteğine Chrome Eklentisi
+
+https://gist.github.com/sh4dowb/9ecdc521c7323411f3294d5126a2bfde adresindeki kodlar için chrome eklentisi.
+Eklentiyi yüklediğinizde Canlı DErsler sayfasında buton çıkar ve https://gist.github.com/sh4dowb/9ecdc521c7323411f3294d5126a2bfde adresindeyayınlanan kodu otomtik çalıtırmanızı sağlar.
+
+Kullanımı:
+Dosyaları indiriniz.
+Chrome ve Chromium tarayıcınızın menülerinden "Diğer araçlar -> Uzantılar" seçeneğini çalıştırınız. "Geliştirici modu" aktif değilse aktif hale getiriniz. "Paketlenmemiş öğe yükle" düğmesi ile gelen gözat penceresinden, daha önce indirdiğiniz dosyayı çıkardmış olduğunuz dizini gösteriniz. 
