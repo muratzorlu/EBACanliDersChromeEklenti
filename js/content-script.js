@@ -4,6 +4,7 @@ var $btn= $('<input type="button" value="MAC&PARDUS Zoom Aç" style="position: f
 
 
 var $url="https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//studytime/getteacherstudytime";
+var $data="status=2&type=1&pageNumber=1&pageSize=25";
 var $buton=0;
 
 
@@ -16,10 +17,12 @@ $.each( arr, function( index, value ) {
     if(value.substring(0,15)=="livesessionview") 
 	{
 		$url="https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//studytime/getteacherstudytime";
+		$data="status=2&type=1&pageNumber=1&pageSize=25";
 		$buton=1;
 	} else if(value.substring(0,14)=="liveMiddleware") 
 	{
 		$url="https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//studytime/getstudentstudytime";
+		$data="status=1&type=2&pagesize=25&pagenumber=0";
 		$buton=1;
 	} else $buton=0;
 });
@@ -47,7 +50,7 @@ function goFrame() {
     "Content-Type" : "application/x-www-form-urlencoded",
     "Accept" : "json"
   },
-  data : "status=2&type=1&pageNumber=1&pageSize=25",
+  data : $data,
   withCredentials : true,
   crossDomain : true,
   xhrFields : {
@@ -99,4 +102,3 @@ function goFrame() {
   }
 });
 }
-
