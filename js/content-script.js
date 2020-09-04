@@ -5,11 +5,8 @@ var $buton=0;
 var $kim=0;
 $("body").append($btn);
 $("#ekle").hide();
-
 chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
    if (msg.action == 'SendIt') {
-	   	  
-	  
 	var arr = window.location.toString().split('/');
 	$.each( arr, function( index, value ) {
 			console.log(value);
