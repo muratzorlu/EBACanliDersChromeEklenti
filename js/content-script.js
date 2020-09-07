@@ -35,7 +35,7 @@ chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
 						  if($kim==1)
 							{
 								$url="https://uygulama-ebaders.eba.gov.tr/ders/FrontEndService//studytime/getteacherstudytime";
-								$data="status=2&type=1&pageNumber=1&pageSize=25";
+								$data="status=1&type=2&pageNumber=1&pageSize=25";
 								$buton=1;
 							} else if($kim==2)
 							{
